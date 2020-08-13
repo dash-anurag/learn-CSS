@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NavBar  -->
+  <ul class="navbar navbar-light bg-white mb-0 " id="navId">
+    <li class="navbar-brand px-5 ">
+      <a href="#" class="navbar-brand">HTML Tutorial</a>
+    </li>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </ul>
+  <div class="jumbotron p-3 mb-0 custom-jumbotron">
+    <div class="container mx-4">
+      <h1 class="display-4">A Guide To Learning HTML!</h1>
+    </div>
+  </div>
+  
+  <div class="container mt-4">
+    <h3 class="heading">HTML</h3>
+    <p>HTML stands for Hyper Text Markup Language, which is the most      widely used language on Web to develop web pages. HTML was created by  Berners-Lee in late 1991 but "HTML 2.0" was the first
+      standard HTML specification which was published in 1995. HTML 4.01 was a major version of HTML and it was published in late 1999. Though HTML 4.01 version is widely used but currently we are having HTML-5 version which is an extension to HTML 4.01, and this version was published in 2012.</p>
+      <h3 class="heading">Hello World using HTML</h3>
+      <p>To get a familiarity on HTML syntax try these code in your browser which will distinguish paragraphs
+        and headers..</p>
+  <pre>
+  <code>&lt;!DOCTYPE HTML&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;This is a sample piece.&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;This shows a heading.&lt;/h1&gt;
+    &lt;p&gt;Hello World!&lt;/p&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;</code></pre>
+        <h3 class="heading">Tags and attributes in HTML</h3>
+        <p>Tags and attributes are the basis of HTML.</p>
+        <p>Tags are used to mark up the start of an HTML element and they are usually enclosed in angle brackets. An example of a tag is: &lt;h1&gt;. Most tags must be opened &lt;h1&gt; and closed &lt;/h1&gt; in order to function.</p>
+        <p>Attributes contain additional pieces of information. Attributes take the form of an opening tag and additional info is placed inside. An example of an attribute is:
+          <pre><code>&lt;img src="sieve.jpg" alt="Excitement"&gt;</code></pre></p>
+          <h3 class="heading">Basic Construction of an HTML Page</h3>
+          <p>These tags should be placed underneath each other at the top of every HTML page that you create.</p>
+          <p>&lt;!DOCTYPE html&gt; - This tag specifies the language you will write on the page. In this case, the language is HTML 5.</p>
+          <p>&lt;html&gt; - This tag signals that from here on we are going to write in HTML code.</p>
+          <p>&lt;head&gt; - This is where all the metadata for the page goes — stuff mostly meant for search engines and other computer programs.</p>
+          <p>&lt;body&gt; - This is where the content of the page goes.</p>
+          <h3 class="heading">Further Tags</h3>
+          <p>Inside the &lt;head&gt; tag, there is one tag that is always included: &lt;title&gt;, but there are others that are just as important:</p>
+          <p>&lt;title&gt;<br>This is where we insert the page name as it will appear at the top of the browser window or tab.</p>
+          <p>&lt;meta&gt;<br>This is where information about the document is stored: character encoding, name (page context), description.</p>
+          <h3 class="heading">Adding content</h3>
+          <p>Next, we will make &lt;body&gt; tag.</p>
+          <p>The HTML &lt;body&gt; is where we add the content which is designed for viewing by human eyes.</p>
+          <p>This includes text, images, tables, forms and everything else that we see on the internet each day.</p>
+          <h3 class="heading">Other Key Elements</h3>
+          <p>They are as follows:</p>
+          <table class="table table-bordered">
+            <tr>
+              <th>Element</th>
+              <th>Meaning</th>
+              <th>Purpose</th>
+            </tr>
+            <tr>
+              <td>&lt;b&gt;</td>
+              <td>Bold</td>
+              <td>Highlight important information</td>
+            </tr>
+            <tr>
+              <td>&lt;strong&gt;</td>
+              <td>Strong</td>
+              <td>Similarly to bold, to highlight key text</td>
+            </tr>
+            <tr>
+              <td>&lt;i&gt;</td>
+              <td>Italic</td>
+              <td>To denote text</td>
+            </tr>
+            <tr>
+              <td>&lt;em&gt;</td>
+              <td>Emphasised Text</td>
+              <td>Usually used as image captions</td>
+            </tr>
+            <tr>
+              <td>&lt;mark&gt;</td>
+              <td>Marked Text</td>
+              <td>Highlight the background of the text</td>
+            </tr>
+            <tr>
+              <td>&lt;small&gt;</td>
+              <td>Small text</td>
+              <td>To shrink the text</td>
+            </tr>
+            <tr>
+              <td>&lt;strike&gt;</td>
+              <td>Striked Out Text</td>
+              <td>To place a horizontal line across the text</td>
+            </tr>
+            <tr>
+              <td>&lt;u&gt;</td>
+              <td>Underlined Text</td>
+              <td>Used for links or text highlights</td>
+            </tr>
+            <tr>
+              <td>&lt;ins&gt;</td>
+              <td>Inserted Text</td>
+              <td>Displayed with an underline to show an inserted text</td>
+            </tr>
+            <tr>
+              <td>&lt;sub&gt;</td>
+              <td>Subscript Text</td>
+              <td>Typographical stylistic choice</td>
+            </tr>
+            <tr>
+              <td>&lt;sup&gt;</td>
+              <td>Superscript Text</td>
+              <td>Another typographical presentation style</td>
+            </tr>
+          </table>
+          <h3 class="heading">The Anchor Tag</h3>
+          <p>The <a> (or anchor) opening tag is written in the format:</p>
+            <pre><code>&lt;a href="https://www.google.com/"&gt;</code></pre>
+            <p>The first part of the attribute points to the page that will open once the link is clicked.</p>
+            <p>Meanwhile, the second part of the attribute contains the text which will be displayed to a visitor in order to entice them to click on that link.</p>
+            <h3>How To Add Images In HTML To Your Website</h3>
+            <p>In today’s modern digital world, images are everything. The &lt;img&gt; tag has everything you need to display images on your site. Much like the &lt;a&gt; anchor element, &lt;img&gt; also contains an attribute.</p>
+            <p>The attribute features information for your computer regarding the <strong>source</strong>, <strong>height</strong>, <strong>width</strong> and <strong>alt text</strong> of the image.</p>
+            <p>The &lt;img&gt; tag normally is written as follows:</p>
+            <pre><code>&lt;img src="yourimage.jpg" alt="Describe the image" height="X" width="X"&gt;</code></pre>
+
+            <h3 class="heading">How To Make an HTML List</h3>
+            <p>In web design, there are 3 different types of lists which you may wish to add to your site.</p>
+            <h4>Ordered List</h4>
+            <p>The first is an &lt;ol&gt;: This is an ordered list of contents. For example:<br>1.An item<br>2.Another item<br>3.Another goes here</p>
+            <p>Inside the &lt;ol&gt; tag we list each item on the list inside &lt;li&gt; &lt;/li&gt; tags.</p>
+            <p>For example:</p>
+  <pre><code> &lt;ol&gt;
+    &lt;li&gt;An item&lt;/li&gt;
+    &lt;li&gt;Another item&lt;/li&gt;
+    &lt;li&gt;Another goes here&lt;/li&gt;
+  &lt;/ol&gt;</code></pre>
+            <h4 class="heading">Unordered List</h4>
+            <p>The second type of list that you may wish to include is an &lt;ul&gt; unordered list. This is better known as a bullet point list and contains no numbers.</p>
+            <p>For example:</p>
+  <pre><code> &lt;ul&gt;
+    &lt;li&gt;This is&lt;/li&gt;
+    &lt;li&gt;An unordered&lt;/li&gt;
+    &lt;li&gt;List&lt;/li&gt;
+  &lt;/ul&gt;</code></pre>           
+              
+            <h4 class="heading">Definition List</h4>
+            <p>Finally, you may wish to include a definition list <dl> on your page. An example of a <dl> list is as follows:</p>
+              <p>The code used for the above is as follows:</p>
+  <pre><code>&lt;dl&gt;<br>&lt;dt&gt;Item&lt;/dt&gt;<br>&lt;dd&gt;The definition goes here&lt;/dd&gt;<br>&lt;/dl&gt;</code></pre>
+              
+              <p>Let’s try it out. Open index.html and on a new line, enter the following HTML:</p>
+  <pre><code>&lt;p&gt;This website will have the following benefits for my business:&lt;/p&gt;<br>&lt;ul&gt;<br>&lt;li&gt;Increased traffic &lt;/li&gt;<br>&lt;li&gt;Global Reach&lt;/li&gt;<br>&lt;li&gt;Promotional Opportunities&gt;/li&lt;<br>&lt;/ul&gt;</code></pre>
+              
+              <p>Now hit save and check out the results in your browser. If everything worked out then it will display a bullet-pointed table displaying the information above.</p>
+              <h3 class="heading">How To Add Tables In HTML</h3>
+              <p>Another way to keep your website looking neat and orderly is through the use of a table.</p>
+              <p>This is definitely the most complicated part of this tutorial, however, learning it will certainly pay off in the long-run.</p>
+              <p>With this in mind, tables can still be a useful way to present content on your page.</p>
+              <h4 class="heading">What Does a Table Consist Of?</h4>
+              <p>When drawing a table we must open an element with the &lt;table&gt; opening tag. Inside this tag, we structure the table using the table rows, &lt;tr&gt;, and cells, &lt;td&gt;.</p>
+              <p>An example of an HTML table is as follows:</p>
+  <pre><code>&lt;table&gt;<br>&lt;tr&gt;<br>&lt;td&gt;Row 1 - Column 1&lt;/td&gt;<br>&lt;td&gt;Row 1 - Colunm 2 &lt;/td&gt;<br>&lt;td&gt;Row 1 - Column 3 &lt;/td&gt;<br>&lt;/tr&gt;<br>&lt;tr&gt;<br>&lt;td&gt;Row 2 - Column 1&lt;/td&gt;<br>&lt;td&gt;Row 2 - Column 2&lt;/td&gt;<br>&lt;td&gt;Row 2 - Column 3&lt;/td&gt;<br>&lt;/tr&gt;<br>&lt;/table&gt;</code></pre>
+              
+              <p>This will produce a 2-row table with 3 cells in each row.</p>
+            </div>
+            
+            
+            
+            
+            
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+          </body>
+          </html>
