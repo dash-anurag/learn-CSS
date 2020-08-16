@@ -1,44 +1,729 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-      <!-- NavBar  -->
-      <ul class="navbar navbar-light bg-white mb-0 " id="navId">
-        <li class="navbar-brand px-5 ">
-          <a href="#" class="navbar-brand">CSS Tutorial</a>
-        </li>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </ul>
-      <div class="jumbotron p-3 mb-0 custom-jumbotron">
-        <div class="container mx-4">
-          <h1 class="display-4">A Guide To Learning CSS!</h1>
-        </div>
-      </div>
-      <div class="learn-html container-fluid">
-        <a href="html_tutorial.html" class="learn-html">If you are a complete beginner,you must learnt HTML First</a>
-      </div>
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- NavBar  -->
+  <ul class="navbar navbar-light bg-white mb-0 " id="navId">
+    <li class="navbar-brand px-5 ">
+      <a href="#" class="navbar-brand">CSS Tutorial</a>
+    </li>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </ul>
+  <div class="jumbotron p-3 mb-0 custom-jumbotron">
+    <div class="container mx-4">
+      <h1 class="display-4">A Guide To Learning CSS!</h1>
+    </div>
+  </div>
+  <div class="learn-html container-fluid">
+    <a href="html_tutorial.html" class="learn-html">If you are a complete beginner,you must learnt HTML First</a>
+  </div>
+  <div class="container mt-4">
+    <h2 class="heading">CSS</a></h2>
+    <p>CSS is short for Cascading Style Sheets and is the primary language used to describe look and formatting for webpages across the Internet and documents of markup (e.g. HTML and XML) in general.
+    A markup language like HTML was initially designed to provide information about formatting and looks itself, but it soon became clear that it would make much more sense to split this into two layers: Document Content and Document Presentation, with CSS fulfilling the task of the latter. Historically that is why HTML has tags like font, which sole purpose is to adjust font family, color and size locally, a job that is today handled by CSS. This allows the developer to re-use formatting rules across several places in the same document and even across multiple documents.
+    </p>
+
+    <h3 class="heading">Hello, CSS World !</h3>
+    <p>Throughout the history of programming, every tutorial with respect for itself has started with a "Hello, world!" example, with the sole purpose of showing the most basic way to bring the text "Hello, world!" to the user's screen. This could however easily be accomplished in pure HTML, without the use of any CSS, so we'll spice it up just a bit with a different color:</p>
+    <pre><code>
+    &lt;style type="text/css"&gt;
+    h1 {
+        color: DeepSkyBlue;
+    }
+    &lt;/style&gt;
+
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    </code></pre>
     
+    <h3 class="heading">Anatomy of a CSS Rule</h3>
+    <p>We'll focus on the anatomy and syntax of CSS, to get a deeper understanding of how it works. Let's have a look at the previously mentioned example again, where we had a CSS rule which targeted "h1" elements:</p>
+    <pre><code>
+    h1 {
+      color: DeepSkyBlue;
+    }
+    </code></pre>
+    
+    <p>What we have here is a <b>selector</b> with one <b>property</b> and one <b>value</b> - these are the core concepts of CSS and we should try to remember their names as we progress through this tutorial. In this example, <b>h1 is the selector name</b>, <b>color is the property</b> and <b>DeepSkyBlue is the value</b>.</p>
+    
+    <p>In between these three concepts, we see a variety of special characters: There's the curly braces around the property and value, there's the colon separating the property from the value and there's the semicolon after the value. Each of them makes it easy for the browser to parse and understand our CSS code: The curly braces allow us to group several properties into the same rule (selector), the colon tells the parser where the property ends and the value starts, and the semicolon tells the parser where the value ends.</p>
+    <p>Let us see a more complex example to demonstrate the above:</p>
+
+    <pre><code>
+    h1, h2, h3 {
+      color: DeepSkyBlue;
+      background-color: #000;
+      margin: 10px 5px;
+    }
+    h2 {
+      color: GreenYellow;
+    }
+    </code></pre>
+
+    <h3 class="heading">Linking CSS to HTML</h3>
+    <p>There are several ways to link CSS with HTML: </p>
+    <h4 class="subheading">Inline CSS through the Style attribute</h4>
+    <p>Almost every HTML tag includes the Style attribute and using this attribute, we can specify CSS directly for the element. This defeats one of the main advantages of CSS, re-usability, since CSS code applied with this technique only applies to a single element and can't be re-used for other elements.</p>
+
+    <pre><code>&lt;span style="color: Blue; text-decoration: underline;"&gt;Hello, CSS!&lt;/span&gt;</code></pre>
+    
+    <h4 class="subheading">Document wide CSS through style blocks</h4>
+    <p>The second easiest way to apply CSS to elements in your document is through the use of a style block. HTML includes a tag called style, which can contain CSS code. Here, we can define rules which can then be used all across your document. Here's an example:</p>
+    <pre><code>
+    &lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+      &lt;head&gt;
+      &lt;title&gt;Style blocks&lt;/title&gt;
+      &lt;style type="text/css"&gt;
+	  .highlight{
+		  color: Blue;
+		  text-decoration: underline;
+	    }
+      &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      This is a piece of &lt;span class="highlight"&gt;text&lt;/span&gt; with &lt;span class="highlight"&gt;highlighted&lt;/span&gt; elements in &lt;span class="highlight"&gt;it&lt;/span&gt;.
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </code></pre>
+    
+    <p>Notice how we can now define the rule in one place and then re-use it multiple times in the document. We can define multiple style blocks, if we want to, and place them wherever in the document we want to. It is however considered best practice to include the style block(s) in the top of the document, inside the head (&lt;head&gt;) section.</p>
+
+    <h4 class="subheading">Global CSS through external CSS documents</h4>
+    <p>So, by using the style block as described above, we can re-use your CSS code all over the document, but we still have to include it on all of the pages of your website, which requires the browser to download it on each request instead of just downloading an external CSS file once and then cache it. This is a major disadvantage of the style block approach and why we should normally go for the third approach instead: The external CSS file!</p>
+    <p>A CSS file is simply a plain text file saved with a .css extension and then referenced in the file(s) where you want to apply the rules. If we re-use the example from the style block part, we can then move the "highlight" rule to a new file (without the HTML part) and save it under an appropriate name, e.g. style.css:</p>
+
+    <pre><code>
+      .highlight {
+        color: Blue;
+        text-decoration: underline;
+    }
+    </code></pre>
+    
+    <p>We can reference it in our HTML document, using the link element:</p>
+    
+    <pre><code>
+  &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;title&gt;Style blocks&lt;/title&gt;
+    &lt;link rel="stylesheet" type="text/css" href="style.css"/&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+    This is a piece of &lt;span class="highlight"&gt;text&lt;/span&gtwith &lt;span class="highlight"&gt;highlighted&lt;/span&gtelements in &lt;span class="highlight"&gt;it&lt;/span&gt;.
+
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </code></pre>
+    
+    <p><em>This example requires the HTML and CSS file to be in the same directory - if they are not, we need to update the href attribute to match the path.</em></p>
+    <h3 class="heading">Selectors</h3>
+    <h4 class="subheading">The Element selector</h4>
+
+    <pre><code>   p {
+      color: Red;
+  }</code></pre>
+
+  <h4 class="subheading">The Class selector</h4>
+    <p>A class selector looks just like an element selector, but instead of using names that are tied to the names of HTML elements, we make up the name and then we prefix it with a dot (.). For instance:
+        <ul>
+          <li>.red{}</li>
+          <li>.myElements{}</li>
+          <li>.navigation{}</li>
+        </ul>
+    </p>
+
+    <pre><code>
+      &lt;style type="text/css"&gt;
+          .red {  
+              color: Red;
+          }
+            
+          .beautiful { 
+              font-weight: bold;  
+              color: Blue; 
+              font-style: italic;  
+          }  
+          &lt;/style&gt;
+            
+          &lt;p class="red"&gt;  
+            Here's some text - &lt;span class="beautiful">this part is especially pretty!&lt;/span&gt; 
+          &lt;/p&gt;
+            
+          This text is very normal!
+    </code></pre>
+    
+    <p>Here's another example containing multiple classes:</p>
+
+    <pre><code>
+      &lt;style type="text/css"&gt;
+            .status {
+                padding: 5px;
+                margin: 5px;
+                border-width: 1px;
+                border-style: solid;
+            }
+            
+            .error {
+                color: Red;
+                border-color: Maroon;
+            }
+            
+            .information {
+                color: Blue;
+                border-color: Navy;
+            }
+      &lt;/style&gt;
+            
+        &lt;div class="status error"&gt;
+            This is an error!
+        &lt;/div&gt;
+                
+        &lt;div class="status information"&gt;
+            This is information!
+        &lt;/div&gt;
+    </code></pre>
+
+    <h3 class="heading">Margins</h3>
+    <p>The margin is an outer, invisible border around the element. The default value for the margin properties is auto, which usually translates to zero. We can specify the margin(s) for an element by using one or several of the four margin-* properties, named margin-top, margin-right, margin-bottom and margin-left. Here's an example:</p>\
+
+    <pre><code>
+    &lt;style type="text/css"&gt;
+        .box {
+              background-color: DarkSeaGreen;
+              width: 100px;
+              height: 100px;
+              margin-top: 10px;
+              margin-right: 5px;
+              margin-bottom: 10px;
+              margin-left: 5px;
+          }
+      &lt;/style&gt;
+            
+        &lt;div class="box"&gt;
+            Box
+        &lt;/div&gt;
+    </code></pre>
+    
+    <h4 class="subheading">Using the margin shorthand property</h4>
+    <p>While it's perfectly fine to use the margin-* properties, a so-called shorthand property exists, simply named margin. It allows us to define margin values for all four sides, without having to repeat all the property names each time. The margin property simply directs the values out to the margin-top, margin-right, margin-bottom and margin-left properties.</p>
+    <p>The margin property can take from one to four values. This allows us to specify margins for all four sides of an element, but if all four values are the same, we can shorten it to just one value which will be applied to all sides. If we have the same value for top and bottom margin, and another value which should be applied to both the left and right margins, we can just have two values. Confused? Don't be - here's an example where we use all of the mentioned approaches:</p>
+    <pre><code>
+    &lt;style type="text/css"&gt;
+        .box {
+              background-color: DarkSeaGreen;
+              width: 100px;
+              height: 100px;
+        }
+    &lt;/style&gt;
+            
+      &lt;div class="box" style="margin: 10px 10px 10px 10px;"&gt;
+          Box
+      &lt;/div&gt;
+            
+      &lt;div class="box" style="margin: 10px 10px;"&gt;
+          Box
+      &lt;/div&gt;
+            
+      &lt;div class="box" style="margin: 10px;"&gt;
+          Box
+      &lt;/div&gt;
+    </code></pre>
+    <p>
+        Notice how we start with the most verbose way, where we declare all four values, and then work our way down.
+        But which order should they be in? And how does the various versions work? When specifying margins, the following rules apply:
+
+        <h5>4 values:</h5>
+        <ol>
+            <li>[top margin]</li>
+            <li>[right margin]</li>
+            <li>[bottom margin]</li>
+            <li>[left margin]</li>
+        </ol>
+
+        <h5>3 values (not as commonly used):</h5>
+        <ol>
+            <li>[top margin]</li>
+            <li>[left/right margin]</li>
+            <li>[bottom margin]</li>
+        </ol>
+
+        <h5>2 values:</h5>
+        <ol>
+            <li>[top/bottom margin]</li>
+            <li>[left/right margin]</li>
+        </ol>
+
+        <h5>1 value:</h5>
+        <ol>
+            <li>[top/right/bottom/left margin]</li>
+        </ol>
+    </p>
+
+    <h3 class="heading">Borders</h3>
+    <p>By default, most HTML elements doesn't have a border, but CSS gives you plenty of options to define one, with a range of border related properties. In fact, the border can be adjusted using so many properties that it sometimes gets a bit confusing. However, at its most basic level, you will usually want to control the border color, width and style, so let's look at an example of just that:</p>
+
+    <pre><code>
+    &lt;style type="text/css"&gt;
+        .box {
+              width: 100px;
+              height: 100px;
+              border-color: CornflowerBlue;
+              border-width: 2px;
+              border-style: solid;
+          }
+    &lt;/style&gt;
+            
+    &lt;div class="box"&gt;
+        Hello, world!
+    &lt;/div&gt;
+    </code></pre>
+    
+    <p>This is pretty much as basic as it gets - by using the border-style, border-color and border-width properties, we can easily give an element the border we want. Now let's talk about these three properties.</p>
+    <h4 class="subheading">Border color</h4>
+    <p>Just a plain old color property, where we can define the color for the border in several different ways, as it is with all color related properties in CSS.</p>
+    <h4 class="subheading">Border width</h4>
+    <p>Works much like margins and paddings - can be either an absolute value, like in this example, a relative value, or one of the pre-defined border width values: Thin, medium or thick. If we use the pre-defined values, it's up to the browser to interpret them, which basically gives us less control of how our work will look across all the different devices and browsers.</p>
+    <h4 class="subheading">Border style</h4>
+    <p>For the style of the border, we have a range of options. The most commonly used is probably the solid border, but there are many more to choose from: <b>hidden, dotted, dashed, solid, double, groove, ridge, inset</b> and <b>outset</b>. Wanna know how they all look? Try out this example:</p>
+    <pre><code>
+    &lt;style type="text/css"&gt;
+          .box {
+              width: 100px;
+              height: 100px;
+              border-color: CornflowerBlue;
+              border-width: 4px;
+              margin: 10px;
+              float: left;
+          }
+    &lt;/style&gt;
+            
+      &lt;div class="box" style="border-style: dashed;"&gt;Dashed&lt;/div&gt;
+      &lt;div class="box" style="border-style: dotted;"&gt;Dotted&lt;/div&gt;
+      &lt;div class="box" style="border-style: double;"&gt;Double&lt;/div&gt;
+      &lt;div class="box" style="border-style: groove;"&gt;Groove&lt;/div&gt;
+      &lt;div class="box" style="border-style: inset;"&gt;Inset&lt;/div&gt;
+      &lt;div class="box" style="border-style: outset;"&gt;Outset&lt;/div&gt;
+      &lt;div class="box" style="border-style: ridge;"&gt;Ridge&lt;/div&gt;
+      &lt;div class="box" style="border-style: solid;"&gt;Solid&lt;/div&gt;
+    </code></pre>
+
+    <h4 class="subheading">Shorthands</h4>
+    <p>We talked about shorthand properties earlier - properties which allows you to define values for multiple properties at the same time. In the first example, we actually used shorthand properties to define the same color, width and style for borders of all four sides of an element. For instance, border-style actually maps to <b>border-top-style, border-right-style, border-bottom-style</b> and <b>border-left-style</b>, and the same goes for border-width and border-color.</p>
+
+    <pre><code>
+    &lt;style type="text/css"&gt;
+        .box {
+            width: 100px;
+            height: 100px;
+            border-style: solid dashed ridge dotted;
+            border-color: CornflowerBlue Chartreuse CadetBlue Chocolate;
+            border-width: 1px 2px 3px 4px;
+        }
+    &lt;/style&gt;
+            
+      &lt;div class="box"&gt;
+          Hello, world!
+      &lt;/div&gt;
+    </code></pre>
+    
+    <h4 class="subheading">Border Radius</h4>
+    <p>As an addition to CSS 3, the ability to define border radius was added, effectively giving developers the possibility to make rounded corners on their elements.</p>
+
+    <pre><code>
+    &lt;style type="text/css"&gt;
+          .box {
+                width: 100px;
+                height: 100px;
+                border: 3px solid CornflowerBlue;
+                border-radius: 5px;
+          }
+    &lt;/style&gt;
+      &lt;div class="box"&gt;
+          Hello, world!
+      &lt;/div&gt;
+    </code></pre>
+    
+    <p>The only disadvantage is the lack of support for this in Internet Explorer 8 and versions below it, but they will simply fall back to regular corners. Border-radius is a shorthand property, short for border-top-left-radius, border-top-right-radius, border-bottom-right-radius and border-bottom-left-radius. We can set these individually, or use one or several values for the border-radius property to have different values for the four corners of an element.</p>
+    <p>The border-radius property takes absolute and relative values, just like most other CSS length units, and in the next example, we'll use that to create corners so rounded that the usual squared box actually becomes a circle:</p>
+
+    <pre><code>
+    &lt;style type="text/css"&gt;
+      .circle {
+            width: 100px;
+            height: 100px;
+            background-color: CornflowerBlue;
+            border-radius: 50%;
+      }
+    &lt;/style&gt;
+    
+    &lt;div class="circle"&gt;&lt;/div&gt;
+    </code></pre>
+    
+    <h3 class="heading">Padding</h3>
+    <p>In the previous topic, we talked about margins, which is the amount if extra whitespace added to the sides of an element. Padding is just the same, but on the inside of the element. In other words, padding is an inner, invisible border around your element. This is done with one or several of the padding properties called <b>padding-top</b>, <b>padding -right</b>, <b>padding-bottom</b> and <b>padding-left</b>:</p>
+
+    <pre><code>
+    &lt;style type="text/css"&gt;
+          .box {
+              border: 2px solid CadetBlue;
+              background-color: Gainsboro;
+              padding-top: 5px;
+              padding-right: 10px;
+              padding-bottom: 5px;
+              padding-left: 10px;
+          }
+    &lt;/style&gt;
+            
+      &lt;div class="box"&gt;
+          Hello, world!
+      &lt;/div&gt;
+    </code></pre>
+  
+    <h4 class="subheading">Using the padding shorthand property</h4>
+    <p>The padding property simply directs the values out to the padding-top, padding-right, padding-bottom and padding-left properties.</p>
+    <pre><code>
+    &lt;style type="text/css"&gt;
+        .box {
+              border: 2px solid CadetBlue;
+              background-color: Gainsboro;
+              width: 100px;
+              height: 100px;
+              margin: 10px;
+        }
+    &lt;/style&gt;
+            
+      &lt;div class="box" style="padding: 10px 10px 10px 10px;"&gt;
+          Box
+      &lt;/div&gt;
+            
+      &lt;div class="box" style="padding: 10px 10px;"&gt;
+          Box
+      &lt;/div&gt;
+            
+      &lt;div class="box" style="padding: 10px;"&gt;
+          Box
+      &lt;/div&gt;
+    </code></pre>
+   
+    <h3 class="heading">Width and height properties</h3>
+    <p>Webpages use fluid layout model by default, i.e., elements take up the space they need, and if there's not enough room for them, they are automatically pushed into a direction with more available space. This all happens thanks to the fact that the width and height properties of an element is set to "auto" by default, meaning that the element will automatically expand or subtract depending on the content within it.</p>
+    <p>We should be aware of the difference between inline and block elements, when it comes to dimensions, because they will behave differently: By default, an inline element will only consume the vertical and horizontal space needed to fit the content. A block element, on the other hand, will use all of the available horizontal space but only the vertical space needed to fit the content. Therefore, only block level elements can have custom widths and heights specified, as illustrated in this example:</p>
+
+    <pre><code>
+      &lt;style type="text/css"&gt;
+            .box-look {
+                background-color: Silver;
+                margin: 20px;
+                padding: 10px;
+            }
+            
+            #box1 {
+                width: auto;
+                height: auto;
+            }
+            
+            #box2 {
+                width: 100px;
+                height: 100px;
+            }
+      &lt;/style&gt;
+            
+          &lt;div id="box1" class="box-look"&gt;
+              Box 1&lt;br&gt;
+              Some content....
+              &lt;/div&gt;
+                
+          &lt;div id="box2" class="box-look"&gt;
+              Box 2&lt;br&gt;
+              Long text is automatically wrapped...
+          &lt;/div&gt;
+            
+          &lt;span class="box-look"&gt;
+              Inline content. Only uses the space it needs...
+          &lt;/span&gt;
+    </code></pre>
+
+    <h3 class="heading">Text & Fonts</h3>
+    <p>It is said that almost 95% of the information on the web is written and therefore it is only logical to say that any web-designer should have an extensive knowledge of typography. Whenever we optimize the typography of our website, we also increase the accessibility, readability and usability - and who wouldn't want that?</p>
+    <h4 class="subheading">Font-family</h4>
+    <p>The first thing to set the tone of our typography is the font. Generally, there are two types of fonts - serif and sans-serif. The difference? The serif fonts have feet and the sans-serif doesn't. Here is an example:</p>
+
+    <pre><code>
+    &lt;p style="font-family:serif;"&gt;This is your browsers default serif font&lt;/p&gt;
+    &lt;p style="font-family:sans-serif;"&gt;This is your browsers default sans-serif font&lt;/p&gt;
+    </code></pre>
+  
+    <p>To set the font family for the entire page, we need to set it for the body of the document - this wa yall text on the webpage is rendered in this font;</p>
+    <pre><code>body {
+        font-family: Times New Roman, Times, serif;
+}</code></pre>
+ 
+    <p>Here is an explanation of what this snippet of CSS means - This declaration tells the browser to look for the font 'Times New Roman' and if this is not installed, use Times. If the browser doesn't have any of those use whatever generic serif font it does have.
+    </p>
+    <h4 class="subheading">Font-weight</h4>
+    <p>The font-weight property defines how bold our text are and there are lots of possible values; normal, bold, bolder, lighter, 100, 200, 300, 400, 500, 600, 700, 800, 900, and inherit.</p>
+    <p>Here is a rough guide to match the numerical scale with the most common weight terms:
+        <ul>
+            <li>100: Thin, Hairline, Ultra-light, Extra-light</li>
+            <li>200: Light</li>
+            <li>300: Book</li>
+            <li>400: Regular, Normal, Plain, Roman, Standard</li>
+            <li>500: Medium</li>
+            <li>600: Semi-bold, Demi-bold</li>
+            <li>700: Bold</li>
+            <li>800: Heavy, Black, Extra-bold</li>
+            <li>900: Ultra-black, Extra-black, Ultra-bold, Heavy-black, Fat, Poster</li>
+        </ul>
+    </p>
+    <p>Here is an example:</p>
+
+    <pre><code>
+      &lt;style&gt;
+        .weight200 {font-weight:200 }
+        .weight800 {font-weight:800 }
+      &lt;/style&gt;
+        &lt;p class="weight200"&gt;To travel is to live - H. C. Andersen &lt;/p&gt;
+        &lt;p class="weight800"&gt; To travel is to live - H. C. Andersen &lt;/p&gt;
+    </code></pre>
+    
+    <h4 class="subheading">Font-style</h4>
+    <p>The font-style property defines whether or not our text is italic or oblique. But what is the difference between italic and oblique? Here is an explanation: oblique is normally a roman font that has been skewed a certain number of degrees (from 8-12 degrees normally) automatically whereas an italic is created by the font designer to achieve a more calligraphic and slanted version of the font.</p>
+
+    <pre><code>
+      &lt;style&gt;
+          .styleItalic {font-style: italic }
+          .styleOblique {font-style: oblique }
+      &lt;/style&gt;
+        &lt;p class="styleItalic"&gt;To travel is to live - H. C. Andersen &lt;/p&gt;
+        &lt;p class="styleOblique"&gt; To travel is to live - H. C. Andersen &lt;/p&gt;
+    </code></pre>
+  
+    <h4 class="subheading">Font-size</h4>
+    <p>The various types of measurement units are:
+        <ol>
+            <li>
+                <h5>EM measurement unit</h5>
+                <p>The 'em' is a scalable unit designed specifically for web media. The 'em' is designed to take the users preset font-size into consideration, this means, that 1em is always the users preferred font-size.</p>
+                <p>According to W3C 'an em is equal to the computed value of the 'font-size' property of the element on which it is used. The exception is when 'em' occurs in the value of the 'font-size' property itself, in which case it refers to the font size of the parent element.' In other words - an em does not have a fixed size.</p>
+            </li>
+            <li>
+                <h5>Percentage measurement unit</h5>
+                <p>If we choose to use percentages as our measurement unit, we can use it in two ways: We can choose to make your font-sizing relative to the users preferences. We do this by adding a declaration to the body:</p>
+                <pre><code>body {font-size:100%;}</code></pre>
+            </li>
+        </ol>
+    </p>
+    <h4 class="subheading">Text-align</h4>
+    <p>We are so used to left-aligned text, that text-align is a property we hardly notice - except for one place, when we are reading an old fashioned paper, where the text are justified in order to make the columns of the paper appear more 'clear'. The four options available for text-align property are:
+        <ul>
+            <li>right</li>
+            <li>left</li>
+            <li>center</li>
+            <li>justify</li>
+        </ul>
+    </p>
+    <h4 class="subheading">Word-spacing</h4>
+    <p>Word-spacing is one of those features that should only be used for headings, block quotes, or other non body text as it can have a nice visual effect but decreases the readability. CSS treats every character or set of characters with a space around them as a 'word'.</p>
+    <h4 class="subheading">Letter-spacing</h4>
+    <p>We use the letter-spacing property to control the amount of space between the letters. We can even use negative values in order to get the letters to stand even closer.</p>
+    <h4 class="subheading">Text-transform</h4>
+    <p>As the name says, text-transform transforms your letters - they can be transformed to uppercase, lowercase, or capitalize.</p>
+    <p>Below is an example containing a nice mix of text-transform and letter-spacing:</p>
+
+    <pre><code>
+    &lt;style&gt;
+        h2 {
+            font-size: 1.7em;
+            text-transform:uppercase;
+        }
+        p:first-line {
+            text-transform:uppercase;
+         }
+        .introduction {
+            letter-spacing: 0.25em;
+            text-transform:uppercase;
+            border-bottom: 1px solid white;
+            border-top: 1px solid white;
+            padding-bottom: 1em;
+            padding-top: 1em;
+        }
+    &lt;/style&gt;
+            
+      &lt;h2&gt;The Perfume - An excerpt&lt;/h2&gt;
+      &lt;p class="introduction"&gt;For people could close their eyes to greatness, to horrors, to beauty,
+      and their ears to melodies or deceiving words. But they couldn't escape scent.&lt;p&gt;
+      &lt;p&gt;And scent entered into their very core, went directly to their hearts, and decided for good 
+      and all between affection and contempt, disgust and lust, love and hate. &lt;br&gt;
+      He who ruled scent ruled the hearts of men.&lt;/p&gt;
+    </code></pre>
+    
+    <h4 class="subheading">Text decoration</h4>
+    <p>The <b>text-decoration</b> property is actually quite self-explanatory: IT allows us to decorate our text in various ways. It si most commonly used to underline the text. However, it actually has several other possibilities. All the possible values are shown in the example below:</p>
+    <pre><code>
+    &lt;style type="text/css"&gt;
+          div {
+              margin: 30px 0;
+          }
+    &lt;/style&gt;
+            
+        &lt;div style="text-decoration: overline;"&gt;Hello, world!&lt;/div&gt;     
+        &lt;div style="text-decoration: line-through;"&gt;Hello, world!&lt;/div&gt;    
+        &lt;div style="text-decoration: underline;"&gt;Hello, world!&lt;/div&gt;    
+        &lt;div style="text-decoration: underline overline line-through;"&gt;Hello, world!&lt;/div&gt;
+    </code></pre>
+
+    <h3 class="heading">Colors</h3>
+    <h4 class="subheading">Text & Background color</h4>
+    <p>The CSS property used to control the color of text is simply called color.</p>
+    <pre><code>
+    &lt;p style="color: Red;"&gt;Red text&lt;/p&gt;
+    &lt;p style="color: Blue;"&gt;Blue text&lt;/p&gt;
+    </code></pre>
+    
+    <p>Working with the background color is just as easy. For that purpose, we have a property called background-color. It allows us to change the background color of an element just as easy we changed the text color, and the two properties can of course be combined.</p>
+    <pre><code>
+    &lt;p style="background-color: Silver; color: Red;"&gt;Red text&lt;/p&gt;
+    &lt;p style="background-color: Gold; color: Blue;"&gt;Blue text&lt;/p&gt;
+    </code></pre>
+    
+    <p>The different ways to apply colors are:
+        <ul>
+            <li>RGB Colors: rgb([0-255], [0-255], [0-255])<br>The values in the brackets are level of saturation og Red, Blue and Green colors respectively. Different combinations of the three values gives all colors perceivable by human eye.</li><br>
+            <li>RGBa : rgba([0-255], [0-255], [0-255], [0-1])<br>In addition to the normal rgb values, the fourth parameter defines transparency, taking values between 0 to 1 (in decimal), where 0 is fully transparent and 1 is a completely solid color.</li><br>
+            <li>HEX colors: #000 / #000000<br>The HEX notation consists of a hash(#) character followed by either 6 or 3 characters/numbers. We can read the values by discarding the hash character and then dividing the remaining 6 characters up into sets of two. Each set defines the values for R, G and B, using the hexadecimal notation.</li>
+            <li>Named Colors: <br> gold,red,blue,white,black,etc...</li>
+        </ul>
+    </p>
+
+    <h3 class="heading">Backgrounds</h3>
+    <p>We already looked at the ability to define a different background color than what is used by default, but with CSS, we can actually use images for the background as well. Using the background-image property, along with several helper properties, we can completely control this useful aspect of CSS.</p>
+    <p>In the first example, we're going to see just how easy it is to use a background image with a regular div element:</p>
+
+    <pre><code>
+    &lt;style type="text/css"&gt;
+        .box {
+              background-image: url('&lt;your-url-here&gt;');
+              width: 200px;
+              height: 100px;
+              text-align: center;
+              font-weight: bold;
+              font-size: 2em;
+        }
+    &lt;/style&gt;
+            
+      &lt;div class="box"&gt;
+          Hello, world!
+      &lt;/div&gt;
+    </code></pre>
+    
+    <p>The URL can be any type of image that the most common web browsers can use, so JPEG, PNG and GIF are obvious and very commonly used.</p>
+    <h4 class="subheading">The background-repeat property:</h4>
+    <p>CSS can repeat the background image we specify, to fill out the entire container. In fact, this is the default behavior, which is great for a lot of situations. This allows us to create a small, textured background image and then have it repeated as many times as needed, to fill out the available background. <br>The values possible for this property are:
+        <ul>
+            <li>repeat</li>
+            <li>repeat-x</li>
+            <li>repeat-y</li>
+            <li>no-repeat</li>
+        </ul>
+    
+    <b>repeat</b> is the default value of repeat, which basically means that the background image will be repeated in both directions. For the next two, we use <b>repeat-x</b> and <b>repeat-y</b> - the first one repeating the background only horizontally, while the latter only repeats vertically. The last one is the <b>no-repeat</b> value, which means that the image will be displayed as it is. In any case, if the background is actually bigger than the containing element, then the image will be clipped - only the required portion of it, to fill the containing element, will be used, with the rest being invisible.
+    </p>
+    <h4 class="subheading">The background-position property</h4>
+    <p>This property determines the position of the background image. We can use either one or two values, and we can use the position keywords (top, bottom, left, right and center) as well as percentages and lengths - we can even combine them !</p>
+
+    <pre><code>
+    &lt;style type="text/css"&gt;
+        .box {
+              background-image: url('http://css3-tutorial.net/images/blu_stripes.png');  
+              background-repeat: no-repeat;  
+              width: 200px;  
+              height: 150px;  
+              border: 1px solid black;  
+              text-align: center;  
+              font-weight: bold;  
+              font-size: 1.5em;  
+              margin: 10px;  
+        }  
+    &lt;/style&gt;
+
+        &lt;div class="box" style="background-position: top;"&gt;
+            Top  
+        &lt;/div&gt;  
+            
+        &lt;div class="box" style="background-position: top right;"gt;  
+            Top, right  
+        &lt;/div&gt;  
       
-      
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+        &lt;div class="box" style="background-position: bottom left;"&gt;  
+            Bottom, left  
+        &lt;/div&gt;  
+            
+        &lt;div class="box" style="background-position: 10% 50%;"&gt;  
+            Percentage based  
+        &lt;/div&gt;  
+            
+        &lt;div class="box" style="background-position: 10px 30px;"&gt;  
+            Length based  
+        &lt;/div&gt;
+            
+        &lt;div class="box" style="background-position: 50% bottom;"&gt;  
+            Combination  
+        &lt;/div&gt;
+    </code></pre>
+   
+    <p>Now that you have learnt about CSS, go make stuff!!!</p>
+    <!-- END-OF-CONTENT -->
+  </div>
+
+  <!-- Footer -->
+<footer class="footer text-center">
+  <div class="container ">
+    <span class="text-muted">
+      Made in collaboration of<br>
+      <div class="row">
+        <div class="col-4">Anurag Dash</div>
+        <div class="col-4">Dibyanshu Anand</div>
+        <div class="col-4">Yagnesh Mohanty</div>
+      </div> 
+    </span>
+    <br>
+  </div>
+  <!-- Copyright -->
+  <div class="footer-copyright custom-footer text-center py-3">© 2020 IIIT
+  </div>
+</footer>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
