@@ -4,7 +4,8 @@ This repo contains the project for CSS-Tutorial Assignment for IWT-Sem5
 ### Order of work
 
 - [x] add HTML content
-- [ ] add CSS content
-- [ ] styling both
-- [ ] Making them integrated.
-- [ ] Final decorations
+- [x] add CSS content
+- [x] styling both
+- [x] Making them integrated.
+- [x] Final decorations
+- [ ] Add Exercise Section
