@@ -28,8 +28,21 @@ h2 h3 h4{
   background-color: #ffe8d4;
   text-align: center;
 }
+.test {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+}
+.test:hover {
+  text-decoration: none;
+  color: green;
+}
 .learn-html a {
   color: #333333;
+  text-decoration: none;
+}
+.learn-html a:hover {
+  color: blueviolet;
   text-decoration: none;
 }
 pre {
