@@ -9,3 +9,4 @@ This repo contains the project for CSS-Tutorial Assignment for IWT-Sem5
 - [x] Making them integrated.
 - [x] Final decorations
 - [ ] Add Exercise Section
+- [ ] Redecorate Webpage
