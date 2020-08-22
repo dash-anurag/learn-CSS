@@ -96,3 +96,7 @@ pre {
   padding: 6px 8px 6px 16px;
   color: #064579;
 }
+
+p.option {
+  padding-left: 20px;
+}
