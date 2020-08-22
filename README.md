@@ -10,7 +10,7 @@ This repo contains the project for CSS-Tutorial Assignment for IWT-Sem5
 - [x] Final decorations
 - [x] Add Exercise Section
 - [x] Redecorate Webpage
-- [ ] Add Answers to the Exercise Section using jQuery
+- [x] New Answers page added.
 
 Link to WebPage:
 [Learn CSS](https://dash-anurag.github.io/learn-CSS/ "IWT Project")
