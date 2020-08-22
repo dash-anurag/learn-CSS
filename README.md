@@ -8,8 +8,9 @@ This repo contains the project for CSS-Tutorial Assignment for IWT-Sem5
 - [x] styling both
 - [x] Making them integrated.
 - [x] Final decorations
-- [ ] Add Exercise Section
-- [ ] Redecorate Webpage
+- [x] Add Exercise Section
+- [x] Redecorate Webpage
+- [ ] Add Answers to the Exercise Section using jQuery
 
 Link to WebPage:
 [Learn CSS](https://dash-anurag.github.io/learn-CSS/ "IWT Project")

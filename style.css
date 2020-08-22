@@ -100,3 +100,17 @@ pre {
 p.option {
   padding-left: 20px;
 }
+
+/* .outer {
+  margin: 0 auto;
+  width: 860px;
+  direction: rtl;
+}
+
+.inner {
+  float: right;
+  position: fixed;
+  text-align: right;
+  width: 220px;
+  height: 50px;
+} */
