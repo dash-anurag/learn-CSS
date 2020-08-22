@@ -64,3 +64,35 @@ pre {
 .heading h3{
   font-size: 4rem;
 }
+
+.sidenav {
+  height: 525px;
+  width: 14%;
+  position: absolute;
+  z-index: 1;
+  top: auto;
+  left: 0;
+  right: 0;
+  /* display: block; */
+  /* overflow: hidden; */
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #2196F3;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.sidenav h3 {
+  padding: 6px 8px 6px 16px;
+  color: #064579;
+}

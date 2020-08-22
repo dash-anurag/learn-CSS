@@ -42,8 +42,23 @@
   <div class="learn-html container-fluid">
     <a href="html_tutorial.html" class="learn-html">If you are a complete beginner,you must learnt HTML First</a>
   </div>
-  <div class="container mt-4">
-    <h2 class="heading">CSS</a></h2>
+  
+  <div class="sidenav">
+    <h3>Menu</h3>
+    <a href="#intro_head">Introduction</a>
+    <a href="#linking_head">Linking CSS-HTML</a>
+    <a href="#selectors_head">Selectors</a>
+    <a href="#margins_head">Margins</a>
+    <a href="#borders_head">Borders</a>
+    <a href="#padding_head">Padding</a>
+    <a href="#width_height_head">Width & Height</a>
+    <a href="#text_head">Text & Fonts</a>
+    <a href="#colors_head">Colors</a>
+    <a href="#back_head">Backgrounds</a>
+  </div>
+
+  <div class="container mt-4" style="margin-left: 15%">
+    <h2 class="heading" id="intro_head">CSS</a></h2>
     <p>CSS is short for Cascading Style Sheets and is the primary language used to describe look and formatting for webpages across the Internet and documents of markup (e.g. HTML and XML) in general.
     A markup language like HTML was initially designed to provide information about formatting and looks itself, but it soon became clear that it would make much more sense to split this into two layers: Document Content and Document Presentation, with CSS fulfilling the task of the latter. Historically that is why HTML has tags like font, which sole purpose is to adjust font family, color and size locally, a job that is today handled by CSS. This allows the developer to re-use formatting rules across several places in the same document and even across multiple documents.
     </p>
@@ -84,7 +99,7 @@
     }
     </code></pre>
 
-    <h3 class="heading">Linking CSS to HTML</h3>
+    <h3 class="heading" id="linking_head">Linking CSS to HTML</h3>
     <p>There are several ways to link CSS with HTML: </p>
     <h4 class="subheading">Inline CSS through the Style attribute</h4>
     <p>Almost every HTML tag includes the Style attribute and using this attribute, we can specify CSS directly for the element. This defeats one of the main advantages of CSS, re-usability, since CSS code applied with this technique only applies to a single element and can't be re-used for other elements.</p>
@@ -142,7 +157,7 @@
     </code></pre>
     
     <p><em>This example requires the HTML and CSS file to be in the same directory - if they are not, we need to update the href attribute to match the path.</em></p>
-    <h3 class="heading">Selectors</h3>
+    <h3 class="heading" id="selectors_head">Selectors</h3>
     <h4 class="subheading">The Element selector</h4>
 
     <pre><code>   p {
@@ -209,8 +224,8 @@
         &lt;/div&gt;
     </code></pre>
 
-    <h3 class="heading">Margins</h3>
-    <p>The margin is an outer, invisible border around the element. The default value for the margin properties is auto, which usually translates to zero. We can specify the margin(s) for an element by using one or several of the four margin-* properties, named margin-top, margin-right, margin-bottom and margin-left. Here's an example:</p>\
+    <h3 class="heading" id="margins_head">Margins</h3>
+    <p>The margin is an outer, invisible border around the element. The default value for the margin properties is auto, which usually translates to zero. We can specify the margin(s) for an element by using one or several of the four margin-* properties, named margin-top, margin-right, margin-bottom and margin-left. Here's an example:</p>
 
     <pre><code>
     &lt;style type="text/css"&gt;
@@ -285,7 +300,7 @@
         </ol>
     </p>
 
-    <h3 class="heading">Borders</h3>
+    <h3 class="heading" id="borders_head">Borders</h3>
     <p>By default, most HTML elements doesn't have a border, but CSS gives you plenty of options to define one, with a range of border related properties. In fact, the border can be adjusted using so many properties that it sometimes gets a bit confusing. However, at its most basic level, you will usually want to control the border color, width and style, so let's look at an example of just that:</p>
 
     <pre><code>
@@ -385,7 +400,7 @@
     &lt;div class="circle"&gt;&lt;/div&gt;
     </code></pre>
     
-    <h3 class="heading">Padding</h3>
+    <h3 class="heading" id="padding_head">Padding</h3>
     <p>In the previous topic, we talked about margins, which is the amount if extra whitespace added to the sides of an element. Padding is just the same, but on the inside of the element. In other words, padding is an inner, invisible border around your element. This is done with one or several of the padding properties called <b>padding-top</b>, <b>padding -right</b>, <b>padding-bottom</b> and <b>padding-left</b>:</p>
 
     <pre><code>
@@ -431,7 +446,7 @@
       &lt;/div&gt;
     </code></pre>
    
-    <h3 class="heading">Width and height properties</h3>
+    <h3 class="heading" id="width_height_head">Width and height properties</h3>
     <p>Webpages use fluid layout model by default, i.e., elements take up the space they need, and if there's not enough room for them, they are automatically pushed into a direction with more available space. This all happens thanks to the fact that the width and height properties of an element is set to "auto" by default, meaning that the element will automatically expand or subtract depending on the content within it.</p>
     <p>We should be aware of the difference between inline and block elements, when it comes to dimensions, because they will behave differently: By default, an inline element will only consume the vertical and horizontal space needed to fit the content. A block element, on the other hand, will use all of the available horizontal space but only the vertical space needed to fit the content. Therefore, only block level elements can have custom widths and heights specified, as illustrated in this example:</p>
 
@@ -469,7 +484,7 @@
           &lt;/span&gt;
     </code></pre>
 
-    <h3 class="heading">Text & Fonts</h3>
+    <h3 class="heading" id="text_head">Text & Fonts</h3>
     <p>It is said that almost 95% of the information on the web is written and therefore it is only logical to say that any web-designer should have an extensive knowledge of typography. Whenever we optimize the typography of our website, we also increase the accessibility, readability and usability - and who wouldn't want that?</p>
     <h4 class="subheading">Font-family</h4>
     <p>The first thing to set the tone of our typography is the font. Generally, there are two types of fonts - serif and sans-serif. The difference? The serif fonts have feet and the sans-serif doesn't. Here is an example:</p>
@@ -598,7 +613,7 @@
         &lt;div style="text-decoration: underline overline line-through;"&gt;Hello, world!&lt;/div&gt;
     </code></pre>
 
-    <h3 class="heading">Colors</h3>
+    <h3 class="heading" id="colors_head">Colors</h3>
     <h4 class="subheading">Text & Background color</h4>
     <p>The CSS property used to control the color of text is simply called color.</p>
     <pre><code>
@@ -621,7 +636,7 @@
         </ul>
     </p>
 
-    <h3 class="heading">Backgrounds</h3>
+    <h3 class="heading" id="back_head">Backgrounds</h3>
     <p>We already looked at the ability to define a different background color than what is used by default, but with CSS, we can actually use images for the background as well. Using the background-image property, along with several helper properties, we can completely control this useful aspect of CSS.</p>
     <p>In the first example, we're going to see just how easy it is to use a background image with a regular div element:</p>
 
