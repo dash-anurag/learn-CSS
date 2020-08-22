@@ -34,9 +34,21 @@
       <h1 class="display-4">A Guide To Learning HTML!</h1>
     </div>
   </div>
+  <div class="learn-html container-fluid">
+    <a href="index.html" class="learn-html">Already know HTML ? Let's learn CSS</a>
+  </div>
 
-  <div class="container mt-4">
-    <h2 class="heading">HTML</h2>
+  <div class="sidenav" style="height: 325px;">
+    <h3>Menu</h3>
+    <a href="#intro_head">Introduction</a>
+    <a href="#tags_attribs_head">Tags & Attributes</a>
+    <a href="#anchor_head">Anchor Tag</a>
+    <a href="#list_head">List in HTML</a>
+    <a href="#table_head">Table in HTML</a>
+  </div>
+
+  <div class="container mt-4" style="margin-left: 15%;">
+    <h2 class="heading" id="intro_head">HTML</h2>
     <p>HTML stands for Hyper Text Markup Language, which is the most widely used language on Web to develop web pages.
       HTML was created by Berners-Lee in late 1991 but "HTML 2.0" was the first
       standard HTML specification which was published in 1995. HTML 4.01 was a major version of HTML and it was
@@ -56,7 +68,7 @@
     &lt;p&gt;Hello World!&lt;/p&gt;
   &lt;/body&gt;
   &lt;/html&gt;</code></pre>
-    <h3 class="heading">Tags and attributes in HTML</h3>
+    <h3 class="heading" id="tags_attribs_head">Tags and attributes in HTML</h3>
     <p>Tags and attributes are the basis of HTML.</p>
     <p>Tags are used to mark up the start of an HTML element and they are usually enclosed in angle brackets. An example
       of a tag is: &lt;h1&gt;. Most tags must be opened &lt;h1&gt; and closed &lt;/h1&gt; in order to function.</p>
@@ -147,7 +159,7 @@
         <td>Another typographical presentation style</td>
       </tr>
     </table>
-    <h3 class="heading">The Anchor Tag</h3>
+    <h3 class="heading" id="anchor_head">The Anchor Tag</h3>
     <p>The <a> (or anchor) opening tag is written in the format:</p>
     <pre><code>&lt;a href="https://www.google.com/"&gt;</code></pre>
     <p>The first part of the attribute points to the page that will open once the link is clicked.</p>
@@ -161,7 +173,7 @@
     <p>The &lt;img&gt; tag normally is written as follows:</p>
     <pre><code>&lt;img src="yourimage.jpg" alt="Describe the image" height="X" width="X"&gt;</code></pre>
 
-    <h3 class="heading">How To Make an HTML List</h3>
+    <h3 class="heading" id="list_head">How To Make an HTML List</h3>
     <p>In web design, there are 3 different types of lists which you may wish to add to your site.</p>
     <h4>Ordered List</h4>
     <p>The first is an &lt;ol&gt;: This is an ordered list of contents. For example:<br>1.An item<br>2.Another
@@ -173,7 +185,7 @@
     &lt;li&gt;Another item&lt;/li&gt;
     &lt;li&gt;Another goes here&lt;/li&gt;
   &lt;/ol&gt;</code></pre>
-    <h4 class="heading">Unordered List</h4>
+    <h4>Unordered List</h4>
     <p>The second type of list that you may wish to include is an &lt;ul&gt; unordered list. This is better known as a
       bullet point list and contains no numbers.</p>
     <p>For example:</p>
@@ -183,7 +195,7 @@
     &lt;li&gt;List&lt;/li&gt;
   &lt;/ul&gt;</code></pre>
 
-    <h4 class="heading">Definition List</h4>
+    <h4>Definition List</h4>
     <p>Finally, you may wish to include a definition list
     <dl> on your page. An example of a <dl> list is as follows:</p>
         <p>The code used for the above is as follows:</p>
@@ -194,12 +206,12 @@
 
         <p>Now hit save and check out the results in your browser. If everything worked out then it will display a
           bullet-pointed table displaying the information above.</p>
-        <h3 class="heading">How To Add Tables In HTML</h3>
+        <h3 class="heading" id="table_head">How To Add Tables In HTML</h3>
         <p>Another way to keep your website looking neat and orderly is through the use of a table.</p>
         <p>This is definitely the most complicated part of this tutorial, however, learning it will certainly pay off in
           the long-run.</p>
         <p>With this in mind, tables can still be a useful way to present content on your page.</p>
-        <h4 class="heading">What Does a Table Consist Of?</h4>
+        <h4>What Does a Table Consist Of?</h4>
         <p>When drawing a table we must open an element with the &lt;table&gt; opening tag. Inside this tag, we
           structure the table using the table rows, &lt;tr&gt;, and cells, &lt;td&gt;.</p>
         <p>An example of an HTML table is as follows:</p>
@@ -209,7 +221,7 @@
   </div>
 
   <div class="learn-html container-fluid">
-    <a href="index.html" class="learn-html">Now that you have learnt HTML,now learn CSS</a>
+    <a href="index.html" class="learn-html">Now that you have learnt HTML, now learn CSS</a>
   </div>
   <br>
   <!-- Footer -->
