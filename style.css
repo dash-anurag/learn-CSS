@@ -45,6 +45,10 @@ h2 h3 h4{
   color: blueviolet;
   text-decoration: none;
 }
+.ans {
+	color: blueviolet;
+	text-decoration: none;
+}
 pre {
   background: #f4f4f4;
   border: 1px solid #ddd;
@@ -101,16 +105,3 @@ p.option {
   padding-left: 20px;
 }
 
-/* .outer {
-  margin: 0 auto;
-  width: 860px;
-  direction: rtl;
-}
-
-.inner {
-  float: right;
-  position: fixed;
-  text-align: right;
-  width: 220px;
-  height: 50px;
-} */
